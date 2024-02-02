@@ -1,0 +1,170 @@
+@font-face {
+    font-family: regular;
+    src: url(./Fonts/Product\ Sans\ Regular.ttf);
+}
+@font-face {
+    font-family: product;
+    src: url(./Fonts/Product\ Sans\ Bold.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+  
+
+
+.main{
+    width: 100%;
+    height: 100vh;
+    background: #5E9C40;
+    
+  
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5%;
+    font-size: 20px;
+    font-family: regular;
+    z-index: 99;
+    color: white;
+}
+.nav .center{
+    display: flex;
+    gap: 10%;
+}
+.fanta{
+    width: 25%;
+    z-index: 99;
+
+}
+.nav + h1,.fanta{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    white-space:no-wrap;
+    font-size: 20vmax;
+    transform: translate(-50%,-50%);
+    font-family: product;
+    letter-spacing: 50px;
+    color: white;
+}
+.junkOrange{
+    width: 20%;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(0%,-50%);
+    font-family: product;
+
+}
+.coconoutleaf{
+    position: absolute;
+    right: 0%;;
+    top: 12%;
+}
+.leaf{
+    width: 15%;
+    position: absolute;
+    top: 10%;
+}
+.leaf2{
+    width: 14%;
+    position: absolute;
+    top: 65%;
+    left: 75%;
+}
+
+.lemon{
+    width: 15%;
+    margin-left: 33%;
+    position: absolute;
+    margin-top: -2%;
+    z-index: 0;
+}
+.main2{
+    background: #4D231C;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.lft{
+    width: 50%;
+}
+.rft{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+}
+.rft h1{
+    font-size: 5em;
+    margin: 5% 0%;
+    font-family: product;
+}
+.rft p{
+    font-size: 1.1em;
+    width: 80%;
+    font-family: regular;
+}
+.svg{
+    width: 100%;
+}
+.main3{
+    width: 100%;
+    height: 100vh;
+    background: #0E7724;
+    display: flex;
+    justify-content: space-around;
+   align-items: center;
+   flex-wrap: wrap;
+}
+.card{
+    width: 22%;
+    height: 60%;
+    background: #fff;
+    border-radius: 20px;
+}
+.card h1{
+    font-size: 4em;
+    font-family: product;
+}
+.card button{
+    border: none;
+    background: #0E7724;
+    font-size: 1.8vmax;
+    color: #fff;
+    font-weight: lighter;
+    padding: 3%;
+    border-radius:2vmax;
+    position: relative;
+}
+.item{
+    text-align: center;
+    margin-bottom: 10%;
+   
+}
+.image{
+    width: 100%;
+    height: 70%;
+    margin: auto;
+    position: relative;
+    
+}
+.pepsi{
+    width: 100%;
+    position: absolute;
+    top: -28%;
+}
+.coke{
+   height: 130%;
+    position: absolute;
+    top: -28%;
+ 
+   
+}
