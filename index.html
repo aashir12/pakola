@@ -38,7 +38,7 @@
     </div>
     <div class="rft">
         <h1>Flavour Updated</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, excepturi sed, itaque placeat id natus soluta veniam obcaecati qui a laborum laboriosam dolorem illum labore sit, voluptates commodi neque dolores tempore temporibus deleniti? Nobis, ratione hic error quis cum neque nulla laudantium nostrum sit nihil dolorum quisquam enim quaerat, eaque ex sequi, harum totam quia non! Labore, neque! Amet voluptatem illo similique recusandae! Ex quaerat quibusdam asperiores, ducimus tempore magni labore. Tenetur voluptas, quos ex repellendus provident mollitia laboriosam adipisci alias a impedit, cum accusamus rerum delectus eaque facilis veniam quia laborum incidunt ea assumenda! Eos magni aspernatur quod distinctio.</p>
+        <p id="paraText"></p>
     </div>
 </div>
 <div class="main3">
@@ -54,9 +54,9 @@
    </div>
    <div class="card">
     <div class="image">
-        <img src="./Assets/pepsi.png" alt="" class="pepsi" style="opacity: 0;">
+        <img src="./Assets/soda.png" alt="" class="pepsi" style="opacity: 0;">
        </div>
-    <div class="item">
+    <div class="item" >
      
         <h1>Pakola</h1>
     <button>Buy Now</button>
@@ -77,5 +77,32 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="index.js"></script>
+
+    <script>
+     (
+        ()=>{
+            var text='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, excepturi sed, itaque placeat id natus soluta veniam obcaecati qui a laborum laboriosam dolorem illum labore sit, voluptates commodi neque dolores tempore temporibus deleniti? Nobis, ratione hic error quis cum neque nulla laudantium nostrum sit nihil dolorum quisquam enim quaerat, eaque ex sequi, harum totam quia non! Labore, neque! Amet voluptatem illo similique recusandae! Ex quaerat quibusdam asperiores, ducimus tempore magni labore. Tenetur voluptas, quos ex repellendus provident mollitia laboriosam adipisci alias a impedit, cum accusamus rerum delectus eaque facilis veniam quia laborum incidunt ea assumenda! Eos magni aspernatur quod distinctio.';
+
+ 
+          
+          var words=text.split(' ');
+
+
+           var sliced = words.slice(0, 30).join(' ');
+
+             var remaining = words.slice(47).join(' ');
+           
+
+           if(window.innerWidth<350){
+            document.getElementById('paraText').innerText=sliced;
+           }
+           else{
+            document.getElementById('paraText').innerText=text;
+
+           }
+           
+        }
+     )()
+    </script>
 </body>
 </html>

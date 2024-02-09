@@ -59,6 +59,7 @@
     top: 75%;
     left: 50%;
     transform: translate(0%,-50%);
+
     font-family: product;
 
 }
@@ -84,7 +85,7 @@
     margin-left: 33%;
     position: absolute;
     margin-top: -2%;
-    z-index: 0;
+
 }
 .main2{
     background: #4D231C;
@@ -129,6 +130,9 @@
     height: 60%;
     background: #fff;
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
 .card h1{
     font-size: 4em;
@@ -142,31 +146,28 @@
     font-weight: lighter;
     padding: 3%;
     border-radius:2vmax;
-    position: relative;
 }
 .item{
     text-align: center;
-    margin-bottom: 10%;
+    margin-bottom: 20%;
+    ;
    
 }
 .image{
     width: 100%;
     height: 70%;
     margin: auto;
-    position: relative;
+
+
     
 }
 .pepsi{
     width: 100%;
-    position: absolute;
-    top: -28%;
-    z-index: 0;
+
 }
 .coke{
    height: 130%;
-    position: absolute;
-    top: -28%;
-    z-index: 0;
+
  
    
 }
@@ -183,8 +184,7 @@
     }
     .fanta{
         width: 60%;
-        z-index: 1;
-
+      z-index: 1;
     }
      .nav + h1{
         position: absolute;
@@ -266,18 +266,33 @@
         color: #fff;
         font-weight: lighter;
         padding: 5%;
+        z-index: 0;
+       
    
   
     }
     .item{
         text-align: center;
+     
        
     }
     .image{
         width: 100%;
         height: 70%;
         margin: auto;
-        position: relative;
-        
+    }
+ 
+  }
+  @media screen and (width< 400px){
+    .item{
+     
+    }.image{
+        margin-top: -30px;
+    }
+  }
+
+  @media screen and (width<800px){
+    .card button{
+        margin-top: -10px;
     }
   }
